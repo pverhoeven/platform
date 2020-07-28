@@ -15,6 +15,7 @@ import { INITIAL_STATE } from './tokens';
 
 export abstract class StateObservable extends Observable<any> {}
 
+// TODO: Add Angular decorator.
 @Injectable()
 export class State<T> extends BehaviorSubject<any> implements OnDestroy {
   static readonly INIT = INIT;

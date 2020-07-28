@@ -73,6 +73,7 @@ export class StoreRootModule {
   ) {}
 }
 
+// TODO: Add Angular decorator.
 @NgModule({})
 export class StoreFeatureModule implements OnDestroy {
   constructor(

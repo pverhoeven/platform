@@ -5,6 +5,7 @@ import { Action } from './models';
 
 export const INIT = '@ngrx/store/init' as '@ngrx/store/init';
 
+// TODO: Add Angular decorator.
 @Injectable()
 export class ActionsSubject extends BehaviorSubject<Action>
   implements OnDestroy {

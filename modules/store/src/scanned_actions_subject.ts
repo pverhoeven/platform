@@ -3,6 +3,7 @@ import { Subject } from 'rxjs';
 
 import { Action } from './models';
 
+// TODO: Add Angular decorator.
 @Injectable()
 export class ScannedActionsSubject extends Subject<Action>
   implements OnDestroy {

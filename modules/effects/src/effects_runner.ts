@@ -4,6 +4,7 @@ import { Subscription } from 'rxjs';
 
 import { EffectSources } from './effect_sources';
 
+// TODO: Add Angular decorator.
 @Injectable()
 export class EffectsRunner implements OnDestroy {
   private effectsSubscription: Subscription | null = null;

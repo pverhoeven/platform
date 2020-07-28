@@ -22,6 +22,7 @@ export abstract class ReducerObservable extends Observable<
 export abstract class ReducerManagerDispatcher extends ActionsSubject {}
 export const UPDATE = '@ngrx/store/update-reducers' as '@ngrx/store/update-reducers';
 
+// TODO: Add Angular decorator.
 @Injectable()
 export class ReducerManager extends BehaviorSubject<ActionReducer<any, any>>
   implements OnDestroy {
